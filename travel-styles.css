@@ -1,0 +1,22 @@
+label {
+    font-size: 26px;
+}
+
+rt {
+    font-size: 14px;
+}
+
+[type="radio"] {
+    width: 20px;
+    height: 18px;
+    margin: 0 5px;
+    vertical-align: text-bottom;
+}
+
+select {
+    width: 40px;
+}
+
+p  span {
+    margin-right: 10px;
+}

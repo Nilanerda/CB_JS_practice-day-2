@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="travel-styles.css">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Traveling</h1>
+    <p>You are entitled to 10% discount when choosing a tour for more than ten days!</p>
+    <form action="" method="post">
+        <p><span>Choose the country:</span>
+            <ruby>
+                <label for="countryEgypt">Egypt</label>
+                <rt>10$ per day</rt>
+            </ruby>
+            <input type="radio" name="country" id="countryEgypt" value="Egypt">
+            <ruby>
+                <label for="countryTurkey">Turkey</label>
+                <rt>13$ per day</rt>
+            </ruby>
+            <input type="radio" name="country" id="countryTurkey" value="Turkey">
+            <ruby>
+                <label for="countryBulgaria">Bulgaria</label>
+                <rt>11$ per day</rt>
+            </ruby>
+            <input type="radio" name="country" id="countryBulgaria" value="Bulgaria">
+            <ruby>
+                <label for="countryGreece">Greece</label>
+                <rt>9$ per day</rt>
+            </ruby>
+            <input type="radio" name="country" id="countryGreece" value="Greece">
+        </p>
+        <p><span>Select number of people:</span>
+            <label for="numberOfPeopleOne">1</label>
+            <input type="radio" name="numberOfPeople" id="numberOfPeopleOne">
+            <label for="numberOfPeopleTwo">2</label>
+            <input type="radio" name="numberOfPeople" id="numberOfPeopleTwo">
+            <label for="numberOfPeopleThree">3</label>
+            <input type="radio" name="numberOfPeople" id="numberOfPeopleThree">
+            <label for="numberOfPeopleFour">4</label>
+            <input type="radio" name="numberOfPeople" id="numberOfPeopleFour">
+            <label for="numberOfPeopleFive">5</label>
+            <input type="radio" name="numberOfPeople" id="numberOfPeopleFive">
+        </p>
+        <p><span>Select number of days:</span>
+            <select name="" id="selectNumberOfDays">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7" selected>7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+            </select>
+        </p>
+        <input type="submit" value="Check it" id="travelSubmitButton">
+    </form>
+    <script src="travel-script.js"></script>
+</body>
+</html>

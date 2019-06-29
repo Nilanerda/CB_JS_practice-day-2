@@ -6,10 +6,23 @@ var countriesArray = [
 ];
 
 
+function calculatePrice(country, countOfPeople, numberOfDays) {
+    var tax = 0;
+    var priceWithoutTax = country.price * countOfPeople * numberOfDays;
 
-document.getElementById('travelSubmitButton').addEventListener('submit', function () {
-    var selectCountry = document.getElementsByName('country');
-    var selectCountOfPeople = document.getElementsByName('numberOfPeople');
-    var selectNumberOfDays = document.getElementById('selectNumberOfDays');
-    var selectValuesNumberOfDays = selectNumberOfDays.options[selectNumberOfDays.selectedIndex].value;
+    if (numberOfDays > 10) {
+        tax = (priceWithoutTax * 10) / 100;
+    }
+
+    return  priceWithoutTax - tax;
+}
+
+document.getElementById('travelSubmitButton').addEventListener('click', function () {
+    var countryName = document.querySelector('input[name="country"]:checked').value;
+    var countOfPeople = parseInt(document.querySelector('input[name="numberOfPeople"]:checked').value);
+    var numberOfDays = parseInt(document.getElementById('selectNumberOfDays').value);
+    var country = countriesArray.find(element => element.countryName === countryName);
+    var price = calculatePrice(country, countOfPeople, numberOfDays);
+
+    document.getElementById('total').innerHTML = 'Total price:' + price;
 });
